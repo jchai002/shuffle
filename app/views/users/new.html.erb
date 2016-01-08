@@ -1,5 +1,166 @@
-<h1>New User</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Shuffle</a>
+        </div>
 
-<%= render 'form' %>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Overview</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Join The Mix!</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
-<%= link_to 'Back', users_path %>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">How It Works</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Step 1</h4>
+                                <h4 class="subheading">Opt in!</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Entering your name and email below to join the shuffle.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Step 2</h4>
+                                <h4 class="subheading">Shuffle</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">We will shuffle all the people who wanted to meet new people for lunch into groups. We will then email you the contact info for your group members.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Step 3</h4>
+                                <h4 class="subheading">Communicate</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Email each other to set up a lunch.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Step 4</h4>
+                                <h4 class="subheading">Have Fun</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Enjoy being social with new people and possibly make new friends!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Please Enter Your Info</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" action="/users" accept-charset="UTF-8" method="post" id="contactForm" data-toggle="validator">
+                        <input name="utf8" type="hidden" value="✓">
+                        <input type="hidden" name="authenticity_token" value="uUC9LQxVHXgJOBdswIembPZtoLNEvGUgDYBSa0TzO/6IdOBukc73cdKC9tn+uHBWs8l/4QvgfmAK2xlgtwh2ZQ==">
+
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" name="user[name]" placeholder="Your Name *" id="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input name="user[email]" type="email" class="form-control" placeholder="Your Email *" id="email" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 text-center">
+                            <button type="submit" class="btn btn-xl">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Shuffle 2016 </span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
