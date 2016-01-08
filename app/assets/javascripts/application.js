@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap-sprockets
+//= require unobtrusive_flash
+//= require unobtrusive_flash_ui
 //= require_tree .

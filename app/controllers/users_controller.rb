@@ -18,6 +18,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
       if @user.save
+        flash[:notice]="You have been added to the mix!"
         redirect_to users_path
       else
         #show error
