@@ -1,5 +1,5 @@
 section#contact{
-  background-image: image-url(MartiniPour.jpg);
+  background-image: image-url("MartiniPour.jpg");
   -webkit-filter: grayscale(30%);
  -moz-filter: grayscale(30%);
  -ms-filter: grayscale(30%);
@@ -7,4 +7,19 @@ section#contact{
  filter: grayscale(30%);
  filter: url(grayscale.svg); /* Firefox 4+ */
  filter: gray; /* IE 6-9 */
+}
+
+.intro-paragraph {
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:30px;
+  line-height:30px;
+  color:white;
+  opacity:2;
+}
+
+.intro-wrapper {
+    background-color:black;
+    z-index:0;
+    opacity:0.8;
+    padding:2em;
 }

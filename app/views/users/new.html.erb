@@ -30,6 +30,16 @@
     <!-- /.container-fluid -->
 </nav>
 
+<header>
+    <div class="container">
+        <div class="intro-text">
+          <div class="intro-wrapper">
+            <div class="intro-paragraph">Welcome to 2016! Let this be your year to seize all opportunites. In a community filled with everyone from CEOs and investors to artists and lawyers, how often do we get to meet and know each other? Spice up your day with sharing an experience with the other entrepreneurs at WeWork.</div>
+          </div>
+        </div>
+    </div>
+</header>
+
 <section id="about">
     <div class="container">
         <div class="row">
@@ -92,7 +102,7 @@
                                 <h4 class="subheading">Have Fun</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Enjoy being social with new people and possibly make new friends!</p>
+                                <p class="text-muted">Enjoy being social with new people and possibly make new friends or business clients!</p>
                             </div>
                         </div>
                     </li>
@@ -118,7 +128,9 @@
                                 <div class="form-group">
                                   <%= f.text_field :name, class: "form-control", placeholder: "Your Name *" %>
                                 </div>
-
+                                <div class="form-group">
+                                    <%= f.text_field :company, class: "form-control", placeholder: "Your Company *"%>
+                                </div>
                                 <div class="form-group">
                                     <%= f.text_field :email, class: "form-control", placeholder: "Your Email *"%>
                                 </div>
@@ -136,26 +148,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Shuffle 2016 </span>
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Shuffle 2016, MIT license </span>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
+                <div class="col-md-12 text-center">
+                    <a href="joinshuffle@gmail.com"><i class="fa fa-envelope"> joinshuffle@gmail.com</i></a>
                 </div>
             </div>
         </div>
