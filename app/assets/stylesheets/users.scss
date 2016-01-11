@@ -1,14 +1,3 @@
-section#contact{
-  background-image: image-url("MartiniPour.jpg");
-  -webkit-filter: grayscale(30%);
- -moz-filter: grayscale(30%);
- -ms-filter: grayscale(30%);
- -o-filter: grayscale(30%);
- filter: grayscale(30%);
- filter: url(grayscale.svg); /* Firefox 4+ */
- filter: gray; /* IE 6-9 */
-}
-
 .intro-paragraph {
   font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:30px;
