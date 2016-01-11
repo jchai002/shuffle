@@ -11,4 +11,7 @@
     z-index:0;
     opacity:0.8;
     padding:2em;
+    -ms-transform: translateY(-125px); /* IE 9 */
+    -webkit-transform: translateY(-125px);/* Chrome, Safari, Opera */
+    transform: translateY(-125px);
 }
